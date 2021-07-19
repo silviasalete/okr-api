@@ -32,6 +32,12 @@ The project was developed using the following technologies
     # Start the project
     $ run OkrAplicattion.class
 ```
+## Documentation of API
+```bash
 
+    # Swagger
+    $ domain/swagger-ui.html
+    
+```
 ---
 

@@ -15,20 +15,21 @@ public class Objective {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int            id;
+	private long           id;
 	private String      title;
-	private String  descricao;
+	private String description;
 	@ManyToOne
     private User    createdBy;
     private Date    createdIn;
 	@ManyToOne
     private User    updatedBy;
     private Date    updatedIn;
-    
-	public int getId() {
+
+	public long getId() {
 		return id;
 	}
-	public void setId(int id) {
+
+	public void setId(long id) {
 		this.id = id;
 	}
 	public String getTitle() {
@@ -37,11 +38,11 @@ public class Objective {
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	public String getDescricao() {
-		return descricao;
+	public String getDescription() {
+		return description;
 	}
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 	public User getCreatedBy() {
 		return createdBy;

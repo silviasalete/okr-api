@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.okr.models.Objective;
 
 @Repository
-public interface ObjectiveRepository extends JpaRepository<Objective, Integer> {
+public interface ObjectiveRepository extends JpaRepository<Objective, Long> {
 
 }
